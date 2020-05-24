@@ -1,3 +1,3 @@
-# ehemals github.io
+# originally  github.io
 github page 
-umbenannt in root (2020-05-24)  
+renamed to root (2020-05-24)  
