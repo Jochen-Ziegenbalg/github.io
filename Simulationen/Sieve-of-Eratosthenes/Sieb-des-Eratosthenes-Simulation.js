@@ -23,7 +23,7 @@ var StreichFeld = StreichFeldArray[StreichFeldIndex];
 var initialisiertP = 17; 
 var gestoppt = 0; 
 
-var Sprache = 0;
+var Sprache = 1;
 var naechsteZahl = new Array("Naechste zu verarbeitende Zahl: &nbsp;&nbsp; ", 
 							 "Next number to be processed: &nbsp;&nbsp; "); 
 var Wurzelueberschritten = new Array("Die Wurzel ist ueberschritten. &nbsp;&nbsp; ", 

@@ -6,36 +6,37 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>Sieb des Eratosthenes</title> 
   <meta name="author" content="Jochen Ziegenbalg">
-  <meta name="keywords" content="Sieb des Eratosthenes, Sieb, sieve of Eratosthenes, sieve, Eratosthenes">
+  <meta name="keywords" content="Sieb des Eratosthenes, Sieb, Sieve of Eratosthenes, sieve, Eratosthenes">
   <script language="JavaScript" src="Sieb-des-Eratosthenes-Simulation.js" type="text/javascript">
   </script>
 </head>
 
 <body>
-<h1 style="text-align: center;"> Das Sieb des Eratosthenes - eine Simulation </h1> 
+<h1 style="text-align: center;"> The Sieve of Eratosthenes - a Simulation </h1> 
 <div style="text-align: center;">
-  <i><font size="4"> Eratosthenes von Kyrene ca. 276-194 v.Chr. </font> </i> 
+  <i><font size="4"> Eratosthenes of Kyrene ca. 276-194 B.C. </font> </i> 
 </div> 
 
-<p> Die Felder "Obergenze" und "Spaltenzahl" können frei belegt und mit dem "Start"-Knopf aktiviert werden. <br> 
-Der Stand des Verfahrens wird in Form einer Tabelle dargestellt; das Darstellungsfenster  sollte wegen der Übersichtlichkeit hinreichend breit sein.  
+<p> The fields "upper limit" and "number of columns" (# columns) can be filled in freely and activated with the "Start" button.  <br> 
+The state of the procedure is displayed in a table.  The display window should be sufficiently wide.   
 </p>
 
+
 <form name="Eratosthenes"> 
-  Obergrenze (frei festlegen oder Standardwert = &nbsp;200):&nbsp; 
+  upper limit (fill in freely / default value = &nbsp;200):&nbsp; 
   <input size="6" name="grenze" 
     onclick="obergrenze = document.Eratosthenes.grenze.value" 
-	onmouseover="window.status='Bitte die Obergrenze eingeben! '" 
+	onmouseover="window.status='Please input upper limit '" 
 	onmouseout="window.status=''" type="text"> &nbsp;&nbsp;  
   <br> 
-  Spaltenzahl (frei festlegen oder Standardwert = &nbsp; 18): &nbsp; 
+  # columns (fill in freely / default value = &nbsp;&nbsp; 18): &nbsp; 
   <input size="3" name="spaltenzhl" 
     onclick="spaltenzahl = document.Eratosthenes.spaltenzhl.value" 
-	onmouseover="window.status='Bitte die Spalten-Zahl eingeben! '" 
+	onmouseover="window.status='Please input number of columns'" 
 	onmouseout="window.status=''" type="text"> </form> 
 
   <input value="Start"  onclick="SiebStart()"  type="button"> 
-  <input value="Weiter" onclick="SiebWeiter()" type="button"> 
+  <input value="continue" onclick="SiebWeiter()" type="button"> 
   <input value="Stop"   onclick="SiebStop()"   type="button">  
  </form> 
 
